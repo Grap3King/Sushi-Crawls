@@ -1,21 +1,34 @@
 var number; 
-var year; 
+var yearFINAL; 
+const headers = {"X-TBA-Auth-Key": "tSAklqAAKXw6IMmTQuN5oIhnSrJ6Pqh3bOgVnVA4LUmmByHPinyb66r1bz7wnSfk"};
 
 
-button.addEventListener("click", function(e) {
+const result1 = document.getElementById('result1'); 
+const b1 = document.getElementById('b1'); 
+const text1 = document.getElementById("text1"); 
+
+b1.addEventListener("click", onINPUT); 
+
+async function onINPUT() {
+  
   alert("Your Team Number Has Been Submitted"); 
-  let userInput = document.querySelector("#number"); 
-  number = parseInt(userInput.value); 
-  document.getElementById("result").innerHTML = "WELCOME";
-})
+  const TeamName = await getTeamName(parseInt(text1.value)); 
+  result1.innerHTML = "Welcome member from " + TeamName  + "."; 
+}
 
-
-const headers = { "X-TBA-Auth-Key": "tSAklqAAKXw6IMmTQuN5oIhnSrJ6Pqh3bOgVnVA4LUmmByHPinyb66r1bz7wnSfk" };
+async function getTeamName(number) {
+  const teamINPUT = "frc" + number;
+  const response = await fetch(`https://www.thebluealliance.com/api/v3/team/${teamINPUT}`, {headers});
+  const TeamInfo = await response.json();
+  var TeamKey = TeamInfo.key;
+  var TeamName = TeamInfo.nickname;
+  return TeamName; 
+}
 
 async function best_worst_team(number, year) {
   // team information
   const teamINPUT = "frc#" + number; 
-  const year = year; 
+  const yearFINAL = year; 
 
   const response = await fetch(`https://www.thebluealliance.com/api/v3/team/${teamINPUT}`, { headers });
   const TeamInfo = await response.json();
