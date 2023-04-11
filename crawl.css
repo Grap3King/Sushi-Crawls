@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+  width: 100%;
+  left: 0; 
+  top: 0; 
+  bottom: 0;
+  right: 0; 
+  position: absolute; 
+  background: linear-gradient(124deg, #56cbf9, #FF729F);
+
+  background-size: 1800% 1800%;
+  animation: rainbow 10s ease infinite; 
+}
+
+a {
+  color: black; 
+  text-decoration: none;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+}
+
+h3 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+}
+h5 {
+  color: black;
+  font-size: 75%;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px; 
+}
+h4 {
+  color: black;
+  font-weight: normal;
+  font-size: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  width: 120px; 
+  height: 30px; 
+  border-radius: 100px; 
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+button{
+  width: 120px;
+  height: 30px;
+  color: black;
+  border-radius: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  background-color: white;
+  transition: ease-out, 0.3s;
+  position: relative;
+  border-color: black; 
+}
+
+button:hover {
+  color: #56cbf9; 
+  border-color: #56cbf9; 
+}
+
+
+h1 {
+  color: black;
+  font-weight: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 400%;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 100%; 
+  }
+  10% {
+    background-position: 20% 80%; 
+  }
+  20% {
+    background-position: 40% 60%; 
+  }
+  30% {
+    background-position: 60% 40%; 
+  }
+  40% {
+    background-position: 80% 20%; 
+  }
+  50% {
+    background-position: 100% 0%; 
+  }
+  60% {
+    background-position: 80% 30%; 
+  }
+  70% {
+    background-position: 60% 50%; 
+  }
+  80% {
+    background-position: 40% 70%; 
+  }
+  90% {
+    background-position: 20% 90%; 
+  }
+  100% {
+    background-position: 0% 100%; 
+  }
+}
