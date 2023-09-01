@@ -23,7 +23,7 @@ a {
 h3 {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
+  font-size: 110%;
 }
 h5 {
   color: black;
@@ -56,13 +56,32 @@ button{
   background-color: white;
   transition: ease-out, 0.3s;
   position: relative;
-  border-color: black; 
 }
 
 button:hover {
   color: #56cbf9; 
   border-color: #56cbf9; 
 }
+
+/* .options {
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  background-color: transparent;
+  transition: ease-out, 0.3s;
+  border-color: black;
+}
+.options:hover {
+  color: #FF729F; 
+  border-color: #FF729F;
+} */
+/* 
+.information {
+  flex:auto
+} */
 
 
 h1 {
@@ -72,7 +91,7 @@ h1 {
   font-size: 400%;
 }
 
-@keyframes rainbow {
+/* @keyframes rainbow {
   0% {
     background-position: 0% 100%; 
   }
@@ -106,4 +125,122 @@ h1 {
   100% {
     background-position: 0% 100%; 
   }
+}
+ */
+.chart-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #023047;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
+.chart-container {
+  width: 200px;
+}
+
+.programming-stats {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  width: fit-content;
+  /* box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 8px 32px;
+  color: #023047;
+  transition: all 400ms ease; */
+}
+
+/* .programming-stats:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+} */
+
+.programming-stats .details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.programming-stats .details ul li {
+  font-size: 16px;
+  margin: 12px 0;
+  text-transform: uppercase;
+}
+
+.programming-stats .details .percentage {
+  font-weight: 700;
+  color: black;
+}
+/* ------------------------------------------------------------- */
+
+.chart-heading2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #023047;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
+.chart-container2 {
+  width: 200px;
+}
+
+.programming-stats2 {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  width: fit-content;
+  /* box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 8px 32px;
+  color: #023047;
+  transition: all 400ms ease; */
+}
+
+/* .programming-stats2:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
+} */
+
+.programming-stats2 .details2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.programming-stats2 .details2 ul li {
+  font-size: 16px;
+  margin: 12px 0;
+  text-transform: uppercase;
+}
+
+.programming-stats2 .details2 .percentage {
+  font-weight: 700;
+  color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.chartMenu {
+        width: 100vw;
+        height: 40px;
+}
+.chartMenu p {
+   padding: 10px;
+   font-size: 20px;
+}
+.chartCard {
+    width: 100vw;
+    height: calc(100vh + 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .chartBox {
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
 }
